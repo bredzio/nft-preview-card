@@ -71,16 +71,6 @@ main aside svg{
     transition: .5s ease;
 }
 
-/* main aside:hover .overlay {
-    opacity:60%;
-    cursor: pointer;
-}
-
-main aside:hover svg {
-    opacity:100%;
-    cursor: pointer;
-} */
-
 main section{
     width: 100%;
 }
@@ -93,11 +83,6 @@ main section header h1{
     cursor: pointer;
     transition: .5s ease;
 }
-
-/* main section header h1:hover{
-    color: hsl(178, 100%, 50%);
-
-} */
 
 main section header p{
     color: hsl(215, 51%, 70%);
@@ -171,10 +156,6 @@ main section footer a{
     text-decoration: none;
     transition: .5s ease;
 }
-
-/* main section footer a:hover{
-    color: hsl(178, 100%, 50%);
-} */
 
 .attribution { 
     font-size: 16px; 
