@@ -18,7 +18,9 @@ body{
     font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 main{
@@ -30,14 +32,54 @@ main{
 }
 
 main aside{
-    width: 100%
+    width: 100%;
+    height:54%;
+    position: relative;
 }
 
 main aside img{
     width: 100%;
-    height: 250px;
+    height: 100%;
     border-radius: 8px;
 }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+    border-radius: 8px;
+    background-color: hsl(178, 100%, 50%);
+}
+
+main aside svg{
+    position: absolute;
+    justify-content: center;
+    top: 100px;
+    bottom: 0;
+    left: 105px;
+    right: 0;    
+    opacity:0;
+    transition: .5s ease;
+}
+
+/* main aside:hover .overlay {
+    opacity:60%;
+    cursor: pointer;
+}
+
+main aside:hover svg {
+    opacity:100%;
+    cursor: pointer;
+} */
 
 main section{
     width: 100%;
@@ -48,7 +90,14 @@ main section header h1{
     letter-spacing: 1px;
     font-size: 20px;
     margin: 14px 0;
+    cursor: pointer;
+    transition: .5s ease;
 }
+
+/* main section header h1:hover{
+    color: hsl(178, 100%, 50%);
+
+} */
 
 main section header p{
     color: hsl(215, 51%, 70%);
@@ -120,12 +169,39 @@ main section footer p{
 main section footer a{
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+    transition: .5s ease;
 }
 
+/* main section footer a:hover{
+    color: hsl(178, 100%, 50%);
+} */
+
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 16px; 
+    text-align: center
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(178, 100%, 50%); 
+    text-decoration: none;
+}
+
+@media (hover: hover) {
+    main aside:hover .overlay {
+        opacity:60%;
+        cursor: pointer;
+    }
+    
+    main aside:hover svg {
+        opacity:100%;
+        cursor: pointer;
+    }
+
+    main section header h1:hover{
+    color: hsl(178, 100%, 50%);
+    }
+
+    main section footer a:hover{
+        color: hsl(178, 100%, 50%);
+    }
 }
