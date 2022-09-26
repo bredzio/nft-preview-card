@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/bredzio/nft-preview-card](https://github.com/bredzio/nft-preview-card)
-- Live Site URL: [https://github.com/bredzio/nft-preview-card](https://github.com/bredzio/nft-preview-card)
+- Live Site URL: [https://bredzio.github.io/nft-preview-card/](https://bredzio.github.io/nft-preview-card/)
 
 
 ### Built with
